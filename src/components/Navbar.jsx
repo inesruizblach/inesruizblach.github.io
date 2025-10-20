@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const sections = ["about", "experience", "projects", "skills", "education", "contact"];
+const sections = ["about", "experience", "projects", "skills", "contact"];
 
 const Navbar = () => {
   const [active, setActive] = useState("about");
@@ -26,7 +26,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 bg-white shadow z-50 py-3">
+    <nav className="sticky top-0 bg-gray-100 shadow z-50 py-3">
       <ul className="flex justify-center gap-6">
         {sections.map((sec) => (
           <li key={sec}>

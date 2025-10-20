@@ -5,7 +5,6 @@ import About from "./components/About.jsx";
 import Experience from "./components/Experience.jsx";
 import Projects from "./components/Projects.jsx";
 import Skills from "./components/Skills.jsx";
-import Education from "./components/Education.jsx";
 import Contact from "./components/Contact.jsx";
 
 function App() {
@@ -13,12 +12,11 @@ function App() {
     <div className="App">
       <Header />
       <Navbar />
-      <main className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16 py-12">
+      <main className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 py-10">
         <section id="about"><About /></section>
         <section id="experience"><Experience /></section>
         <section id="projects"><Projects /></section>
         <section id="skills"><Skills /></section>
-        <section id="education"><Education /></section>
         <section id="contact"><Contact /></section>
       </main>
       <footer className="text-center text-gray-500 py-6">

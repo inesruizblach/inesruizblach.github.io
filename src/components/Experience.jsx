@@ -24,13 +24,14 @@ const experiences = [
 
 const Experience = () => (
   <motion.section
-    className="bg-white rounded-xl shadow p-6"
+    className="bg-gray-100 rounded-xl shadow p-6"
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true }}
     transition={{ duration: 0.6 }}
   >
-    <h2 className="text-xl font-semibold mb-4">Experience</h2>
+    <h2 className="text-2xl font-bold mb-4 text-center">Experience</h2>
+    <div className="w-40 h-0.5 bg-gray-300 mx-auto mb-6 rounded"></div>
     {experiences.map((exp, i) => (
       <div key={i} className="mb-4">
         <h3 className="font-semibold">{exp.role}</h3>
