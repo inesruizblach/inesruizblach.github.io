@@ -93,7 +93,7 @@ const Projects = () => (
             </a>
           </h3>
 
-          <p className="text-gray-700 mb-3">{proj.description}</p>
+          <p className="text-gray-700 mb-3 text-justify leading-relaxed">{proj.description}</p>
 
           {proj.demo && (
             <p className="text-sm">

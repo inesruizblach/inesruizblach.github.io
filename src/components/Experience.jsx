@@ -31,12 +31,12 @@ const Experience = () => (
     transition={{ duration: 0.6 }}
   >
     <h2 className="text-2xl font-bold mb-4 text-center">Experience</h2>
-    <div className="w-40 h-0.5 bg-gray-300 mx-auto mb-6 rounded"></div>
+    <div className="w-40 h-0.5 bg-gray-300 mx-auto mb-6 rounded text-justify"></div>
     {experiences.map((exp, i) => (
       <div key={i} className="mb-4">
-        <h3 className="font-semibold">{exp.role}</h3>
+        <h3 className="font-semibold ">{exp.role}</h3>
         <p className="text-gray-500 text-sm">{exp.location} · {exp.date}</p>
-        <ul className="list-disc list-inside mt-2">
+        <ul className="list-disc list-inside mt-2 text-justify">
           {exp.details.map((d, idx) => <li key={idx}>{d}</li>)}
         </ul>
       </div>

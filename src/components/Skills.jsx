@@ -25,7 +25,7 @@ const Skills = () => (
           {items.map((skill, j) => (
             <span
               key={j}
-              className="bg-gray-200 text-gray-800 text-sm px-2 py-1 rounded-full"
+              className="bg-gray-200 text-gray-800 text-sm px-2 py-1 rounded-full text-justify"
             >
               {skill}
             </span>
