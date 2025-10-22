@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import profileImg from "../../assets/poster_fair.jpeg";
 
 const About = () => (
   <motion.section
@@ -16,7 +15,7 @@ const About = () => (
       {/* Left: Image */}
       <div className="w-full md:w-1/2 flex justify-center md:justify-start">
         <img
-          src={profileImg}
+          src="/poster_fair.jpeg"
           alt="Inés Ruiz"
           className="rounded-lg shadow-lg w-3/4 md:w-full object-cover"
         />

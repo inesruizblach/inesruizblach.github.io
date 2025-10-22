@@ -10,7 +10,7 @@ const Header = () => {
         
         {/* Profile Image */}
         <motion.img
-          src="assets/profile.png"
+          src="/profile.png"
           alt="Inés Ruiz Blach"
           className="w-40 h-40 rounded-xl shadow-lg object-cover"
           initial={{ opacity: 0, y: -20 }}
