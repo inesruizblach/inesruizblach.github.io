@@ -42,19 +42,6 @@ const projects = [
     tech: "Python · PyTorch · Hugging Face Diffusers · Gradio"
   },
   {
-    name: "SinGlu",
-    link: "https://github.com/inesruizblach/SinGlu",
-    description: (
-      <>
-        Inspired by the challenges of following a gluten-free diet, this AI-powered app generates recipes based on available ingredients and provides smart substitutions for common gluten-containing items.<br/>
-        Offers product recommendations to help users source gluten-free ingredients.<br/>
-        Uses the Hugging Face chat completion API (zephyr-7b-beta) for recipe generation and runs interactively in-browser via Streamlit; Live demo.<br/>
-      </>
-    ),
-    demo: "https://share.streamlit.io/inesruizblach/SinGlu",
-    tech: "Python · Streamlit · Hugging Face Inference API · Requests · JSON configuration for product links · GitHub + Streamlit Cloud for deployment"
-  },
-  {
     name: "LiteBank API",
     link: "https://github.com/inesruizblach/LiteBank",
     description: (
@@ -66,6 +53,31 @@ const projects = [
     ),
     demo: "https://litebank.onrender.com/docs",
     tech: "Python · FastAPI · SQLAlchemy · JWT · Docker · GitHub Actions · Render"
+  },
+  {
+    name: "RateFlow",
+    link: "https://github.com/inesruizblach/RateFlow",
+    description: (
+      <>
+        RateFlow is a web app that allows users to rate and review movies, series, or any media while visualizing aggregated sentiment and rating trends in real-time.<br/>
+        Features authentication, personal dashboards, and a recommendation engine powered by natural language sentiment analysis.<br/>
+        Built with a clean modern UI and connected to a REST API backend for scalability.<br/>
+      </>
+    ),
+    tech: "React · Vite · Node.js · Express · MongoDB · Tailwind CSS · JWT · REST API",
+  },
+  {
+    name: "SinGlu",
+    link: "https://github.com/inesruizblach/SinGlu",
+    description: (
+      <>
+        Inspired by the challenges of following a gluten-free diet, this AI-powered app generates recipes based on available ingredients and provides smart substitutions for common gluten-containing items.<br/>
+        Offers product recommendations to help users source gluten-free ingredients.<br/>
+        Uses the Hugging Face chat completion API (zephyr-7b-beta) for recipe generation and runs interactively in-browser via Streamlit; Live demo.<br/>
+      </>
+    ),
+    demo: "https://share.streamlit.io/inesruizblach/SinGlu",
+    tech: "Python · Streamlit · Hugging Face Inference API · Requests · JSON configuration for product links · GitHub + Streamlit Cloud for deployment"
   },
 ];
 
