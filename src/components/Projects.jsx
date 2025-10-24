@@ -59,12 +59,11 @@ const projects = [
     link: "https://github.com/inesruizblach/RateFlow",
     description: (
       <>
-        RateFlow is a web app that allows users to rate and review movies, series, or any media while visualizing aggregated sentiment and rating trends in real-time.<br/>
-        Features authentication, personal dashboards, and a recommendation engine powered by natural language sentiment analysis.<br/>
-        Built with a clean modern UI and connected to a REST API backend for scalability.<br/>
+        RRateFlow is a lightweight, end-to-end data pipeline built with Python.
+        It automatically fetches live currency exchange rates from free APIs, stores them locally, and visualizes historical trends in an interactive Streamlit dashboard.<br/>
       </>
     ),
-    tech: "React · Vite · Node.js · Express · MongoDB · Tailwind CSS · JWT · REST API",
+    tech: "Python · FastAPI · SQLAlchemy · SQLite · Pandas · Streamlit · Requests",
   },
   {
     name: "SinGlu",
