@@ -2,9 +2,43 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const skills = {
-  "Programming & Frameworks": ["Python", "SQL", "JavaScript (React)", "Flask", "VBA", "Tkinter"],
-  "AI & ML": ["Machine Learning", "Deep Learning", "TensorFlow", "PyTorch", "YOLOv8", "Stable Diffusion", "ControlNet", "Gradio", "OpenCV", "Computer Vision", "Image Processing"],
-  "Tools & Platforms": ["Git", "GitHub", "Jira", "Jupyter Notebook", "Google Colab", "VS Code", "PyCharm", "Hugging Face"]
+  "Programming & Frameworks": [
+    "Python",
+    "JavaScript (React)",
+    "Flask",
+    "VBA",
+    "SQL",
+    "Tkinter",
+    "Pytest"
+  ],
+  "Data & ML": [
+    "NumPy",
+    "Pandas",
+    "Machine Learning",
+    "Deep Learning",
+    "Computer Vision",
+    "Image Processing"
+  ],
+  "Tools & Platforms": [
+    "Git",
+    "GitHub",
+    "Jupyter Notebook",
+    "PyCharm",
+    "Visual Studio Code",
+    "Excel (Macros)",
+    "Jira",
+    "CI/CD Pipelines"
+  ],
+  "Methodologies & Soft Skills": [
+    "Agile",
+    "Scrum",
+    "Software Testing & Documentation",
+    "Project Management",
+    "Analytical Thinking",
+    "Problem-Solving",
+    "Effective Communication",
+    "Team Collaboration"
+  ]
 };
 
 const Skills = () => (

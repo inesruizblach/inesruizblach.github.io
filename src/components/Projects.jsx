@@ -10,7 +10,7 @@ const projects = [
         Developed an AI-based food recognition and segmentation system capable of accurately labeling food items and running on IoT-based devices (Raspberry Pi).<br/>
         Implemented and fine-tuned YOLOv8, EdgeSAM, and MobileSAM models, trained on both public (FoodSeg103) and proprietary datasets.<br/>
         Achieved competitive segmentation metrics: mIoU, mAcc, aAcc.<br/>
-        Research contributed to the paper: <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13137/3031247/Food-recognition-and-segmentation-using-embedded-hardware/10.1117/12.3031247.short" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">Food recognition and segmentation using embedded hardware — SPIE 2024</a>, presented at SPIE Optics + Photonics 2024 and published in the SPIE Digital Library.<br/>
+        Research contributed to the paper: <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13137/3031247/Food-recognition-and-segmentation-using-embedded-hardware/10.1117/12.3031247.short" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">Food recognition and segmentation using embedded hardware</a>, presented at SPIE Optics + Photonics 2024 and published in the SPIE Digital Library.<br/>
       </>
     ),
     tech: "Python · TensorFlow · PyTorch · OpenCV · YOLO · Raspberry Pi",
@@ -59,7 +59,7 @@ const projects = [
     link: "https://github.com/inesruizblach/RateFlow",
     description: (
       <>
-        RRateFlow is a lightweight, end-to-end data pipeline built with Python.
+        RateFlow is a lightweight, end-to-end data pipeline built with Python.
         It automatically fetches live currency exchange rates from free APIs, stores them locally, and visualizes historical trends in an interactive Streamlit dashboard.<br/>
       </>
     ),
