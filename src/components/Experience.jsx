@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const roles = [
   { title: "Sr. Software Engineer · Nomura", date: "Oct 2025 – Present" },
-  { title: "Graduate Software Engineer · Nomura", date: "Jul 2024 – Sep 2025" },
+  { title: "Software Engineer · Nomura", date: "Jul 2024 – Sep 2025" },
   { title: "Technology Industrial Placement Intern · Nomura", date: "Jun 2022 – Jun 2023" }
 ];
 
@@ -24,38 +24,20 @@ const education = [
     details: [
       "First Class Honours · Sage & School of Computing Prize — Best Overall Performance (Stage 3)",
       "Major Project: INFORM — AI-based food recognition & segmentation (Grade: 90/100)",
-      "Publication: SPIE Optics + Photonics 2024, San Diego, US"
+      "Publication: contributed to the paper <a href='https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13137/3031247/Food-recognition-and-segmentation-using-embedded-hardware/10.1117/12.3031247.short' target='_blank' rel='noopener noreferrer' class='text-blue-800 hover:underline'>Food recognition and segmentation using embedded hardware</a>, presented at <em>SPIE Optics + Photonics 2024</em> and published in the <em>SPIE Digital Library</em>."
     ]
   },
-  {
-    degree: "Título de Bachillerato — Science Track (Maths, Physics, IT, Technical Drawing)",
-    institution: "Madre Alberta School",
-    location: "Majorca, Spain",
-    date: "Sep 2019 – Jun 2020",
-    details: [
-      "Bachillerato Average: 9.6/10 · University Entrance Grade (PBAU): 13.16/14"
-    ]
-  },
-  {
-    degree: "Academic Year Abroad — Amancio Ortega Foundation Scholar",
-    institution: "Liverpool Regional High School",
-    location: "Nova Scotia, Canada",
-    date: "Sep 2018 – Jun 2019",
-    details: [
-      "Full grant recipient under the Amancio Ortega Foundation Scholarship Program.",
-      "Ranked #1 in Grade 11 · First Class Honours Certificate (9.3/10)."
-    ]
-  }
 ];
 
 const achievements = [
-  "Sage & School of Computing Prize — Best Overall Performance (Stage 3), Newcastle University (2024)",
-  "Amancio Ortega Foundation Scholarship — Full grant to study in Canada (2018/19)",
-  "Team Full Royals Award — BUCS Conference Cup Champion, Newcastle University (2024)",
-  "Balearic Islands Basketball Teams — U14 (2016), U16 (2018), U22 (2023)",
-  "The Charles Ernst Award (MVP Girls Basketball) — Liverpool Regional High School (2019)",
-  "Academic Honours Certificate — Outstanding Academic Achievement, Balearic Islands Government (2018)",
-  "Summer Scientific Campus Scholarship in Artificial Intelligence, University of Salamanca — Spanish Government (2018)"
+  "Sage & School of Computing Prize | Best Overall Performance by a Stage 3 student. School of Computing, Newcastle University, 2024",
+  "Team Full Royals Award | Member of the Basketball team that won the Tier 2 BUCS Conference Cup. Newcastle University, 2024",
+  "Representative Athlete | Selected for the U14 (2016), U16 (2018), and U22 (2023) Balearic Islands Basketball Teams",
+  "The Charles Ernst Award 2018/19 | MVP Girls Basketball. Liverpool Regional High School, Nova Scotia, 2019",
+  "Student Athlete Award | Nova Scotia School Athletic Federation, 2019",
+  "Amancio Ortega Foundation Scholarship | Full grant to study one academic year of high school in Canada (2018/19)",
+  "Summer Scientific Campus Scholarship in Artificial Intelligence | University of Salamanca. Spanish Government, 2018",
+  "Academic Honours Certificate | Award for Outstanding Achievement in Secondary Education. Balearic Islands Government, 2018"
 ];
 
 const Experience = () => (
@@ -82,7 +64,7 @@ const Experience = () => (
         ))}
       </div>
 
-      <ul className="list-disc list-inside mt-2 text-gray-700 leading-relaxed text-justify">
+      <ul className="list-disc list-outside pl-5 mt-2 text-gray-700 leading-relaxed text-justify">
         {details.map((d, idx) => <li key={idx}>{d}</li>)}
       </ul>
     </div>
@@ -94,20 +76,30 @@ const Experience = () => (
         <div key={i} className="mb-4">
           <h4 className="font-semibold">{edu.degree}</h4>
           <p className="text-gray-500 text-sm">{edu.institution} — {edu.location} · {edu.date}</p>
-          <ul className="list-disc list-inside mt-2 text-gray-700 leading-relaxed text-justify">
-            {edu.details.map((d, idx) => <li key={idx}>{d}</li>)}
+          <ul className="list-disc list-outside pl-5 mt-2 text-gray-700 leading-relaxed text-justify">
+            {edu.details.map((d, idx) => (
+              <li key={idx} dangerouslySetInnerHTML={{ __html: d }} />
+            ))}
           </ul>
         </div>
       ))}
     </div>
 
-    {/* ACHIEVEMENTS */}
-    <div>
-      <h3 className="text-xl font-semibold mb-3">Awards & Achievements</h3>
-      <ul className="list-disc list-inside text-gray-700 leading-relaxed text-justify">
-        {achievements.map((a, i) => <li key={i}>{a}</li>)}
-      </ul>
-    </div>
+  {/* ACHIEVEMENTS */}
+  <div>
+    <h3 className="text-xl font-semibold mb-3">Awards & Achievements</h3>
+    <ul className="list-disc list-outside pl-5 text-gray-700 leading-relaxed">
+      {achievements.map((a, i) => {
+        const [title, rest] = a.split(" | ");
+        return (
+          <li key={i}>
+            <strong>{title}</strong>
+            {rest ? ` | ${rest}` : ""}
+          </li>
+        );
+      })}
+    </ul>
+  </div>
   </motion.section>
 );
 

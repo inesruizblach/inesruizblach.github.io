@@ -6,13 +6,14 @@ const skills = {
     "Python",
     "SQL",
     "VBA",
-    "React",
+    "JavaScript (React)",
     "Flask",
     "FastAPI",
     "Tkinter",
     "Streamlit",
     "Gradio",
-    "SQLAlchemy"
+    "SQLAlchemy",
+    "Pytest"
   ],
   "Data Science & AI": [
     "Machine Learning",
@@ -35,19 +36,35 @@ const skills = {
     "NumPy",
     "Pandas",
     "Matplotlib",
-    "Seaborn"
+    "Seaborn",
+    "Altair"
   ],
   "DevOps & Tools": [
     "Git",
     "GitHub",
     "GitHub Actions",
-    "Jira",
     "Docker",
+    "Jira",
     "Jupyter Notebook",
     "Google Colab",
     "Visual Studio Code",
     "PyCharm",
-    "Excel (Macros)"
+    "Excel (Macros)",
+    "Render",
+    "Raspberry Pi",
+    "Requests",
+    "JSON",
+    "CI/CD Pipelines"
+  ],
+  "Methodologies & Soft Skills": [
+    "Agile Methodology",
+    "Scrum",
+    "Software Testing & Documentation",
+    "Project Management",
+    "Analytical Thinking",
+    "Problem-Solving",
+    "Effective Communication",
+    "Team Collaboration"
   ]
 };
 
