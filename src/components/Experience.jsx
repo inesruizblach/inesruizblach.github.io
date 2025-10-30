@@ -61,7 +61,7 @@ const achievements = [
 const Experience = () => (
   <motion.section
     id="experience & education"
-    className="bg-gray-100 rounded-xl shadow p-6"
+    className="bg-gray-100 py-16 px-8 rounded-xl shadow p-6"
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true }}
