@@ -2,47 +2,58 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const skills = {
-  "Programming & Frameworks": [
+  "Programming Languages & Frameworks": [
     "Python",
-    "JavaScript (React)",
-    "Flask",
-    "VBA",
     "SQL",
+    "VBA",
+    "React",
+    "Flask",
+    "FastAPI",
     "Tkinter",
-    "Pytest"
+    "Streamlit",
+    "Gradio",
+    "SQLAlchemy"
   ],
-  "Data & ML": [
-    "NumPy",
-    "Pandas",
+  "Data Science & AI": [
     "Machine Learning",
     "Deep Learning",
     "Computer Vision",
-    "Image Processing"
+    "Image Processing",
+    "Generative AI",
+    "TensorFlow",
+    "PyTorch",
+    "Hugging Face",
+    "OpenCV",
+    "YOLO",
+    "CNN",
+    "Stable Diffusion",
+    "ControlNet",
+    "Scikit-Learn",
+    "ETL"
   ],
-  "Tools & Platforms": [
+  "Data Analysis & Visualization": [
+    "NumPy",
+    "Pandas",
+    "Matplotlib",
+    "Seaborn"
+  ],
+  "DevOps & Tools": [
     "Git",
     "GitHub",
-    "Jupyter Notebook",
-    "PyCharm",
-    "Visual Studio Code",
-    "Excel (Macros)",
+    "GitHub Actions",
     "Jira",
-    "CI/CD Pipelines"
-  ],
-  "Methodologies & Soft Skills": [
-    "Agile",
-    "Scrum",
-    "Software Testing & Documentation",
-    "Project Management",
-    "Analytical Thinking",
-    "Problem-Solving",
-    "Effective Communication",
-    "Team Collaboration"
+    "Docker",
+    "Jupyter Notebook",
+    "Google Colab",
+    "Visual Studio Code",
+    "PyCharm",
+    "Excel (Macros)"
   ]
 };
 
 const Skills = () => (
   <motion.section
+    id="skills"
     className="bg-gray-100 rounded-xl shadow p-6"
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
