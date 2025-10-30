@@ -23,8 +23,7 @@ const education = [
     date: "Sep 2020 – Jun 2024",
     details: [
       "First Class Honours · Sage & School of Computing Prize — Best Overall Performance (Stage 3)",
-      "Major Project: INFORM — AI-based food recognition & segmentation (Grade: 90/100)",
-      "Publication: contributed to the paper <a href='https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13137/3031247/Food-recognition-and-segmentation-using-embedded-hardware/10.1117/12.3031247.short' target='_blank' rel='noopener noreferrer' class='text-blue-800 hover:underline'>Food recognition and segmentation using embedded hardware</a>, presented at <em>SPIE Optics + Photonics 2024</em> and published in the <em>SPIE Digital Library</em>."
+      "Major Project: INFORM — AI-based food recognition & segmentation (Grade: 90/100)"
     ]
   },
 ];
@@ -38,6 +37,16 @@ const achievements = [
   "Amancio Ortega Foundation Scholarship | Full grant to study one academic year of high school in Canada (2018/19)",
   "Summer Scientific Campus Scholarship in Artificial Intelligence | University of Salamanca. Spanish Government, 2018",
   "Academic Honours Certificate | Award for Outstanding Achievement in Secondary Education. Balearic Islands Government, 2018"
+];
+
+const publication = [
+  {
+    title: "Food recognition and segmentation using embedded hardware",
+    authors: "James Rainey, Inés R. Blach, Douglas MacLachlan, John Wannan, and Deepayan Bhowmik",
+    venue: "Proc. SPIE 13137, Applications of Digital Image Processing XLVII, 131370H",
+    date: "30 September 2024",
+    link: "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13137/3031247/Food-recognition-and-segmentation-using-embedded-hardware/10.1117/12.3031247.short"
+  }
 ];
 
 const Experience = () => (
@@ -85,21 +94,38 @@ const Experience = () => (
       ))}
     </div>
 
-  {/* ACHIEVEMENTS */}
-  <div>
-    <h3 className="text-xl font-semibold mb-3">Awards & Achievements</h3>
-    <ul className="list-disc list-outside pl-5 text-gray-700 leading-relaxed">
-      {achievements.map((a, i) => {
-        const [title, rest] = a.split(" | ");
-        return (
-          <li key={i}>
-            <strong>{title}</strong>
-            {rest ? ` | ${rest}` : ""}
-          </li>
-        );
-      })}
-    </ul>
-  </div>
+    {/* ACHIEVEMENTS */}
+    <div className="mb-8">
+      <h3 className="text-xl font-semibold mb-3">Awards & Achievements</h3>
+      <ul className="list-disc list-outside pl-5 text-gray-700 leading-relaxed">
+        {achievements.map((a, i) => {
+          const [title, rest] = a.split(" | ");
+          return (
+            <li key={i}>
+              <strong>{title}</strong>
+              {rest ? ` | ${rest}` : ""}
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+
+    {/* PUBLICATION */}
+    <div>
+      <h3 className="text-xl font-semibold mb-3">Publication</h3>
+      <p className="text-gray-700 leading-relaxed">
+        <strong>James Rainey, Inés R. Blach, Douglas MacLachlan, John Wannan, and Deepayan Bhowmik</strong>,{" "}
+        <em>Food recognition and segmentation using embedded hardware</em>, Proc. SPIE 13137, Applications of Digital Image Processing XLVII, 131370H (30 September 2024);{" "}
+        <a
+          href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13137/3031247/Food-recognition-and-segmentation-using-embedded-hardware/10.1117/12.3031247.short"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 underline"
+        >
+          https://doi.org/10.1117/12.3031247
+        </a>
+      </p>
+    </div>
   </motion.section>
 );
 
