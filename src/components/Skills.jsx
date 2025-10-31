@@ -51,7 +51,6 @@ const skills = {
     "PyCharm",
     "Excel (Macros)",
     "Render",
-    "Raspberry Pi",
     "Requests",
     "JSON",
     "CI/CD Pipelines"
