@@ -30,7 +30,10 @@ const skills = {
     "Stable Diffusion",
     "ControlNet",
     "Scikit-Learn",
-    "ETL"
+    "LangChain",
+    "Retrieval-Augmented Generation (RAG)",
+    "Sentence-Transformers",
+    "ChromaDB"
   ],
   "Data Analysis & Visualization": [
     "NumPy",
