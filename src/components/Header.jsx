@@ -27,7 +27,7 @@ const Header = () => {
         >
           <h1 className="text-3xl font-bold">Inés Ruiz Blach</h1>
           <p className="mt-2 text-gray-600 text-lg">
-            Senior Software Engineer | Computer Vision & Machine Learning Enthusiast
+            Senior Software Engineer
           </p>
           <p className="mt-1 text-gray-500 text-sm">
             <span className="mr-2">🇬🇧 London, United Kingdom</span> · <span>🇪🇸 Mallorca, Spain</span>
