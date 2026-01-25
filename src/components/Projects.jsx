@@ -100,4 +100,53 @@ const projects = [
   },
 ];
 
+const Projects = () => (
+  <motion.section
+    id="projects"
+    className="bg-gray-100 py-16 px-8 rounded-xl shadow p-6"
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.6 }}
+  >
+    <h2 className="text-2xl font-bold mb-4 text-center">Projects</h2>
+    <div className="w-40 h-0.5 bg-gray-300 mx-auto mb-6 rounded"></div>
+
+    <div className="max-w-6xl mx-auto grid gap-8 md:gap-10">
+      {projects.map((proj, i) => (
+        <div
+          key={i}
+          className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200"
+        >
+          <h3 className="text-2xl font-semibold text-blue-700 mb-2">
+            <a href={proj.link} target="_blank" rel="noopener noreferrer">
+              {proj.name}
+            </a>
+          </h3>
+
+          <p className="text-gray-700 mb-3 text-justify leading-relaxed">{proj.description}</p>
+
+          {proj.demo && (
+            <p className="text-sm">
+              <a
+                href={proj.demo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 underline"
+              >
+                Live Demo →
+              </a>
+            </p>
+          )}
+
+          <p className="text-gray-600 text-sm mt-3">
+            <span className="font-medium text-gray-800">Tech:</span>{" "}
+            {proj.tech}
+          </p>
+        </div>
+      ))}
+    </div>
+  </motion.section>
+);
+
 export default Projects;
