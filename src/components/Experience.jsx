@@ -2,8 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const roles = [
-  { title: "Senior Software Engineer · Nomura", date: "Oct 2025 – Present" },
-  { title: "Software Engineer · Nomura", date: "Jul 2024 – Sep 2025" },
+  { title: "Senior Python Software Engineer · Nomura", date: "Oct 2025 – Present" },
+  { title: "Python Software Engineer · Nomura", date: "Jul 2024 – Sep 2025" },
   { title: "Technology Industrial Placement Intern · Nomura", date: "Jun 2022 – Jun 2023" }
 ];
 
