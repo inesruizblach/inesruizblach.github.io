@@ -27,7 +27,7 @@ const About = () => (
         <h2 className="text-2xl font-bold mb-4">About Me</h2>
         <div className="w-40 h-0.5 bg-gray-300 mb-6 rounded"></div>
         <p className="text-gray-700 leading-relaxed mb-6 text-justify">
-          Sr. Software Engineer with a <strong>First-Class Honours in Computer Science</strong> from Newcastle University.<br />
+          Senior Software Engineer with a <strong>First-Class Honours in Computer Science</strong> from Newcastle University.<br />
           Researcher on the <strong>INFORM project</strong> — AI-based food recognition & segmentation — presented at 
           <em> SPIE Optics + Photonics 2024</em> and published in the <a href="https://doi.org/10.1117/12.3031247" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">SPIE Digital Library</a>.<br />
         </p>
