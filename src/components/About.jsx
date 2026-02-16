@@ -29,7 +29,7 @@ const About = () => (
         <p className="text-gray-700 leading-relaxed mb-6 text-justify">
           Senior Python Software Engineer with a <strong>First-Class Honours in Computer Science</strong> from Newcastle University.<br />
           Researcher on the <strong>INFORM project</strong> — AI-based food recognition & segmentation — presented at 
-          <em> SPIE Optics + Photonics 2024</em> and published in the <a href="https://doi.org/10.1117/12.3031247" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">SPIE Digital Library</a>.<br />
+          <em> SPIE Optical Engineering + Applications 2024</em> and published in the <a href="https://doi.org/10.1117/12.3031247" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">SPIE Digital Library</a>.<br />
         </p>
       </div>
 

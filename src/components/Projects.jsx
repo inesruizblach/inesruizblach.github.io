@@ -18,7 +18,7 @@ const projects = [
           className="text-blue-600 underline"
         >
           Food recognition and segmentation using embedded hardware
-        </a>, presented at SPIE Optics + Photonics 2024 and published in the SPIE Digital Library.<br/>
+        </a>, presented at SPIE Optical Engineering + Applications 2024 and published in the SPIE Digital Library.<br/>
       </>
     ),
     tech: "Python · TensorFlow · PyTorch · OpenCV · YOLO · Raspberry Pi",
