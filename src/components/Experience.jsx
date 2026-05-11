@@ -7,14 +7,6 @@ const roles = [
   { title: "Technology Industrial Placement Intern · Nomura", date: "Jun 2022 – Jun 2023" }
 ];
 
-const details = [
-  "Develop and maintain a Risk & Trading platform using Python and VBA backends integrated with Excel frontends.",
-  "Enhance Access Control services (Python backend, React frontend) and migrate legacy VB6 components to Python.",
-  "Lead development of a Generative AI solution that automates investor credit reports and improves risk management workflows.",
-  "Deliver high-quality, tested, and documented code across distributed systems and production environments.",
-  "Collaborate in Agile, globally distributed teams using Jira, Git, and CI/CD pipelines."
-];
-
 const education = [
   {
     degree: "BSc (Hons) in Computer Science with Industrial Placement",
@@ -72,10 +64,6 @@ const Experience = () => (
           </p>
         ))}
       </div>
-
-      <ul className="list-disc list-outside pl-5 mt-2 text-gray-700 leading-relaxed text-justify">
-        {details.map((d, idx) => <li key={idx}>{d}</li>)}
-      </ul>
     </div>
 
     {/* EDUCATION */}
